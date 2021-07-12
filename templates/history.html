@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <h1>Transaction History</h1>
+    <div class="table-responsive table-hover">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Buy/Sell</th>
+                    <th>Company</th>
+                    <th>Symbol</th>
+                    <th>Price</th>
+                    <th>Shares</th>
+                    <th>Total</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in history %}
+                    <tr>
+                        <td>{{ history[i]["type"] }}</td>
+                        <td>{{ history[i]["name"] }}</td>
+                        <td>{{ history[i]["symbol"] }}</td>
+                        <td>{{ history[i]["price"] }}</td>
+                        <td>{{ history[i]["quantity"] }}</td>
+                        <td>{{ history[i]["total"] }}</td>
+                        <td>{{ history[i]["time"] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}
