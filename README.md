@@ -10,3 +10,5 @@ The issue that we may experience with our chosen API is the fact that the users 
 The functionalities of our app will include having an initial cash for $500,000.00 to invest, value of the portfolio( cash + investments) and percentage of each asset(stocks and cash). 
 The user flow will be signing up, signing in, search for the stock the user is interested in, check the stock info(market price and volume) and buying stock or not. When an user signs in, she/he can access her/his portfolio and sell stocks and receive cash.
 Our app is more that a CRUD because our app will have a good UI/UX and will help our users become financial independant.
+The app has been deployed on Heroku and you can start paying right now by clicking on this link: https://salomon-financial.herokuapp.com/
+We are open to feedbacks so we can continuously improve our app.
